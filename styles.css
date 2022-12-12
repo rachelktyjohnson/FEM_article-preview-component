@@ -6,4 +6,71 @@
   font-family: "Manrope", sans-serif;
 }
 
+body {
+  background: hsl(210deg, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  max-width: 330px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+article .feature-image {
+  width: 100%;
+  height: 200px;
+  background-image: url("images/drawers.jpg");
+  background-size: cover;
+}
+article .content {
+  padding: 40px 35px;
+}
+article .content h1 {
+  color: hsl(217deg, 19%, 35%);
+  font-size: 1.02rem;
+}
+article .content p {
+  color: hsl(212deg, 23%, 69%);
+  font-size: 0.82rem;
+  margin-top: 25px;
+}
+article .article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px 25px;
+}
+article .article-footer .author {
+  display: flex;
+  align-items: center;
+}
+article .article-footer .author img {
+  height: 40px;
+  border-radius: 100%;
+}
+article .article-footer .author .author-info {
+  margin-left: 15px;
+}
+article .article-footer .author .author-info p {
+  font-size: 0.8rem;
+  color: hsl(212deg, 23%, 69%);
+}
+article .article-footer .author .author-info p.author-name {
+  font-weight: 700;
+  color: hsl(217deg, 19%, 35%);
+}
+article .article-footer .share-arrow {
+  background: hsl(210deg, 46%, 95%);
+  padding: 8px;
+  border-radius: 100%;
+  overflow: visible;
+  height: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */
