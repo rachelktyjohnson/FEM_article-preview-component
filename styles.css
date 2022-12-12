@@ -22,50 +22,79 @@ article {
   border-radius: 15px;
   overflow: hidden;
 }
+@media (min-width: 600px) {
+  article {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+  }
+}
 article .feature-image {
   width: 100%;
   height: 200px;
   background-image: url("images/drawers.jpg");
   background-size: cover;
 }
+@media (min-width: 600px) {
+  article .feature-image {
+    height: 100%;
+  }
+}
 article .content {
-  padding: 40px 35px;
+  padding: 40px 35px 20px;
 }
 article .content h1 {
   color: hsl(217deg, 19%, 35%);
   font-size: 1.02rem;
+}
+@media (min-width: 600px) {
+  article .content h1 {
+    font-size: 1.3rem;
+  }
 }
 article .content p {
   color: hsl(212deg, 23%, 69%);
   font-size: 0.82rem;
   margin-top: 25px;
 }
-article .article-footer {
+@media (min-width: 600px) {
+  article .content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+article .content .article-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 35px 25px;
+  margin-top: 40px;
 }
-article .article-footer .author {
+@media (min-width: 600px) {
+  article .content .article-footer {
+    margin-top: 25px;
+  }
+}
+article .content .article-footer .author {
   display: flex;
   align-items: center;
 }
-article .article-footer .author img {
+article .content .article-footer .author img {
   height: 40px;
   border-radius: 100%;
 }
-article .article-footer .author .author-info {
+article .content .article-footer .author .author-info {
   margin-left: 15px;
 }
-article .article-footer .author .author-info p {
+article .content .article-footer .author .author-info p {
   font-size: 0.8rem;
   color: hsl(212deg, 23%, 69%);
+  margin: 0;
 }
-article .article-footer .author .author-info p.author-name {
+article .content .article-footer .author .author-info p.author-name {
   font-weight: 700;
   color: hsl(217deg, 19%, 35%);
 }
-article .article-footer .share-arrow {
+article .content .article-footer .share-arrow {
   background: hsl(210deg, 46%, 95%);
   padding: 8px;
   border-radius: 100%;
