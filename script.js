@@ -1,7 +1,7 @@
 const share_button_open = document.querySelector(".share-arrow-open");
 const share_button_close = document.querySelector(".share-arrow-close");
 
-share_button_open.addEventListener("click", (event)=>{
+share_button_open.addEventListener("click", ()=>{
     const share = document.querySelector(".share");
     if (window.innerWidth < 600){
         document.querySelector(".article-footer").style.display = "none";
@@ -20,7 +20,7 @@ share_button_open.addEventListener("click", (event)=>{
     }
 })
 
-share_button_close.addEventListener("click", (event)=>{
+share_button_close.addEventListener("click", ()=>{
     if (window.innerWidth < 600){
         document.querySelector(".article-footer").style.display = "flex";
         document.querySelector(".share").style.display = "none";
